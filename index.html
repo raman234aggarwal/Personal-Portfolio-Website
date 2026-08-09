@@ -8,6 +8,10 @@
       name="description"
       content="Portfolio of Raman Agarwal - B.Tech CSE Student, Full Stack Developer, and Creative Engineer."
     />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23ef4444%22><path d=%22M12 21s-6.7-4.35-9.33-8.2C.6 9.77 1.4 6.2 4.6 4.9c2.02-.82 4.2-.1 5.4 1.5.6.8.9 1.2 1 1.4.1-.2.4-.6 1-1.4 1.2-1.6 3.38-2.32 5.4-1.5 3.2 1.3 4 4.87 1.93 7.9C18.7 16.65 12 21 12 21z%22/></svg>"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -47,43 +51,6 @@
               rose: "#f43f5e",
               amber: "#f59e0b",
             },
-            animation: {
-              float: "float 6s ease-in-out infinite",
-              "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-              "spin-slow": "spin 20s linear infinite",
-              "gradient-x": "gradient-x 6s ease infinite",
-              "fade-in-up": "fade-in-up 0.8s ease-out forwards",
-              "slide-in-left": "slide-in-left 0.8s ease-out forwards",
-              "slide-in-right": "slide-in-right 0.8s ease-out forwards",
-              "scale-in": "scale-in 0.6s ease-out forwards",
-            },
-            keyframes: {
-              float: {
-                "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
-                "33%": { transform: "translateY(-15px) rotate(1deg)" },
-                "66%": { transform: "translateY(-10px) rotate(-1deg)" },
-              },
-              "gradient-x": {
-                "0%, 100%": { backgroundPosition: "0% 50%" },
-                "50%": { backgroundPosition: "100% 50%" },
-              },
-              "fade-in-up": {
-                "0%": { opacity: "0", transform: "translateY(40px)" },
-                "100%": { opacity: "1", transform: "translateY(0)" },
-              },
-              "slide-in-left": {
-                "0%": { opacity: "0", transform: "translateX(-60px)" },
-                "100%": { opacity: "1", transform: "translateX(0)" },
-              },
-              "slide-in-right": {
-                "0%": { opacity: "0", transform: "translateX(60px)" },
-                "100%": { opacity: "1", transform: "translateX(0)" },
-              },
-              "scale-in": {
-                "0%": { opacity: "0", transform: "scale(0.8)" },
-                "100%": { opacity: "1", transform: "scale(1)" },
-              },
-            },
           },
         },
       };
@@ -96,16 +63,9 @@
       }
       /* --- NAVIGATION --- */
       .glass-nav {
-        background: rgba(5, 5, 5, 0.75);
+        background: rgba(5, 5, 5, 0.95);
         backdrop-filter: blur(20px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-        transition: all 0.4s ease;
-      }
-      .glass-nav.scrolled {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        background: rgba(5, 5, 5, 0.95);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
       }
 
       /* --- TECH THEME (Blue / Indigo / Cyan) --- */
@@ -113,22 +73,18 @@
         background: rgba(15, 15, 25, 0.7);
         backdrop-filter: blur(14px);
         border: 1px solid rgba(99, 102, 241, 0.08);
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
       .glass-card-tech:hover {
         border-color: rgba(99, 102, 241, 0.4);
-        transform: translateY(-8px);
         box-shadow:
           0 20px 60px -15px rgba(99, 102, 241, 0.25),
           inset 0 1px 0 rgba(99, 102, 241, 0.1);
       }
       .gradient-text-tech {
         background: linear-gradient(135deg, #818cf8, #6366f1, #22d3ee);
-        background-size: 200% 200%;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: gradient-x 5s ease infinite;
       }
       .section-tech {
         position: relative;
@@ -154,21 +110,17 @@
         background: rgba(25, 15, 15, 0.7);
         backdrop-filter: blur(14px);
         border: 1px solid rgba(244, 63, 94, 0.08);
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
       .glass-card-design:hover {
         border-color: rgba(244, 63, 94, 0.4);
-        transform: translateY(-8px);
         box-shadow:
           0 20px 60px -15px rgba(244, 63, 94, 0.25),
           inset 0 1px 0 rgba(244, 63, 94, 0.1);
       }
       .gradient-text-design {
         background: linear-gradient(135deg, #f43f5e, #f97316, #fbbf24);
-        background-size: 200% 200%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: gradient-x 5s ease infinite;
       }
       .section-design {
         position: relative;
@@ -194,44 +146,30 @@
         background: rgba(20, 20, 20, 0.6);
         backdrop-filter: blur(12px);
         border: 1px solid rgba(255, 255, 255, 0.05);
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
       .glass-card:hover {
         border-color: rgba(255, 255, 255, 0.12);
-        transform: translateY(-6px);
         box-shadow: 0 16px 50px -12px rgba(255, 255, 255, 0.08);
       }
       .gradient-text {
         background: linear-gradient(135deg, #6366f1, #a855f7, #22d3ee, #6366f1);
-        background-size: 300% 300%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: gradient-x 6s ease infinite;
-      }
-      @keyframes gradient-x {
-        0%,
-        100% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
       }
 
-      /* --- BLOBS --- */
+      /* --- BLOBS (static, no float/drift animation) --- */
       .blob {
         position: absolute;
         filter: blur(120px);
         opacity: 0.18;
         z-index: -1;
-        transition: all 1s ease;
       }
       .aspect-16-9 {
         aspect-ratio: 16 / 9;
         overflow: hidden;
       }
 
-      /* --- PROJECT LABEL OVERLAY (GLOSSY BLUE SPARKLE PILL) --- */
+      /* --- PROJECT LABEL OVERLAY (GLOSSY BLUE SPARKLE PILL, static) --- */
       .project-label {
         position: absolute;
         top: 0.5rem;
@@ -268,14 +206,9 @@
         pointer-events: none;
         overflow: hidden;
         cursor: pointer;
-        animation: pill-glow-float 3s ease-in-out infinite;
-        transition:
-          transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-          box-shadow 0.3s ease,
-          border-color 0.3s ease;
       }
 
-      /* Glossy glass reflection on the top half */
+      /* Glossy glass reflection on the top half (static) */
       .project-label::before {
         content: "";
         position: absolute;
@@ -293,88 +226,13 @@
         pointer-events: none;
       }
 
-      /* Subtle shimmer light sweep */
-      .project-label::after {
-        content: "";
-        position: absolute;
-        top: -50%;
-        left: -150%;
-        width: 60%;
-        height: 200%;
-        background: linear-gradient(
-          115deg,
-          transparent 20%,
-          rgba(255, 255, 255, 0.4) 50%,
-          transparent 80%
-        );
-        transform: rotate(25deg);
-        animation: pill-shimmer 4s ease-in-out infinite;
-        pointer-events: none;
-      }
-
-      @keyframes pill-shimmer {
-        0%,
-        20% {
-          left: -150%;
-          opacity: 0;
-        }
-        35% {
-          opacity: 1;
-        }
-        60%,
-        100% {
-          left: 180%;
-          opacity: 0;
-        }
-      }
-
-      @keyframes pill-glow-float {
-        0%,
-        100% {
-          transform: translateY(0);
-          box-shadow:
-            0 0 1px 0.5px rgba(255, 255, 255, 0.4),
-            0 3px 10px rgba(2, 132, 199, 0.4),
-            0 6px 14px rgba(0, 0, 0, 0.45),
-            inset 0 0.8px 1px 0 rgba(255, 255, 255, 0.85),
-            inset 0 1px 3px 0 rgba(186, 230, 253, 0.35),
-            inset 0 -1px 3px 0 rgba(2, 44, 80, 0.7);
-        }
-        50% {
-          transform: translateY(-2px);
-          box-shadow:
-            0 0 1px 1px rgba(255, 255, 255, 0.5),
-            0 5px 14px rgba(14, 165, 233, 0.6),
-            0 8px 18px rgba(0, 0, 0, 0.5),
-            inset 0 0.8px 1.2px 0 rgba(255, 255, 255, 0.95),
-            inset 0 1px 4px 0 rgba(186, 230, 253, 0.45),
-            inset 0 -1px 3px 0 rgba(2, 44, 80, 0.7);
-        }
-      }
-
-      /* Sparkle star icon */
+      /* Sparkle star icon — static */
       .sparkle-icon {
         width: 0.75rem;
         height: 0.75rem;
         flex-shrink: 0;
         filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.95))
           drop-shadow(0 0 4px rgba(56, 189, 248, 0.85));
-        animation: sparkle-pulse 2.8s ease-in-out infinite;
-      }
-
-      @keyframes sparkle-pulse {
-        0%,
-        100% {
-          transform: scale(1) rotate(0deg);
-          filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.9))
-            drop-shadow(0 0 4px rgba(56, 189, 248, 0.8));
-        }
-        50% {
-          transform: scale(1.1) rotate(6deg);
-          filter: drop-shadow(0 0 4px rgba(255, 255, 255, 1))
-            drop-shadow(0 0 7px rgba(186, 230, 253, 0.95))
-            drop-shadow(0 0 10px rgba(56, 189, 248, 0.9));
-        }
       }
 
       @media (max-width: 640px) {
@@ -423,185 +281,33 @@
         border: 1px solid rgba(249, 115, 22, 0.15);
       }
 
-      /* --- SCROLL REVEAL --- */
-      .reveal {
-        opacity: 0;
-        transform: translateY(50px);
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .reveal-left {
-        opacity: 0;
-        transform: translateX(-50px);
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .reveal-left.active {
-        opacity: 1;
-        transform: translateX(0);
-      }
-      .reveal-right {
-        opacity: 0;
-        transform: translateX(50px);
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .reveal-right.active {
-        opacity: 1;
-        transform: translateX(0);
-      }
+      /* --- SECTIONS ALWAYS VISIBLE (scroll-reveal animation removed) --- */
+      .reveal,
+      .reveal-left,
+      .reveal-right,
       .reveal-scale {
-        opacity: 0;
-        transform: scale(0.85);
-        transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .reveal-scale.active {
         opacity: 1;
-        transform: scale(1);
+        transform: none;
       }
-
-      /* --- STAGGER CHILDREN --- */
       .stagger-children > * {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .stagger-children.active > *:nth-child(1) {
-        transition-delay: 0.05s;
         opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(2) {
-        transition-delay: 0.1s;
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(3) {
-        transition-delay: 0.15s;
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(4) {
-        transition-delay: 0.2s;
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(5) {
-        transition-delay: 0.25s;
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(6) {
-        transition-delay: 0.3s;
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(7) {
-        transition-delay: 0.35s;
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(8) {
-        transition-delay: 0.4s;
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(9) {
-        transition-delay: 0.45s;
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(10) {
-        transition-delay: 0.5s;
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(11) {
-        transition-delay: 0.55s;
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .stagger-children.active > *:nth-child(12) {
-        transition-delay: 0.6s;
-        opacity: 1;
-        transform: translateY(0);
+        transform: none;
       }
 
-      /* --- GLOW BUTTONS --- */
-      .btn-glow {
-        position: relative;
-        overflow: hidden;
-        transition: all 0.4s ease;
-      }
-      .btn-glow::before {
-        content: "";
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
-        background: linear-gradient(135deg, #6366f1, #a855f7, #22d3ee, #6366f1);
-        background-size: 400% 400%;
-        border-radius: inherit;
-        z-index: -1;
-        opacity: 0;
-        transition: opacity 0.4s ease;
-        animation: gradient-x 3s ease infinite;
-      }
-      .btn-glow:hover::before {
-        opacity: 1;
-      }
-      .btn-glow:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
-      }
-
+      /* --- BUTTONS (static, no glow/hover animation) --- */
+      .btn-glow,
       .btn-glow-warm {
         position: relative;
         overflow: hidden;
-        transition: all 0.4s ease;
-      }
-      .btn-glow-warm::before {
-        content: "";
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
-        background: linear-gradient(135deg, #f43f5e, #f97316, #fbbf24, #f43f5e);
-        background-size: 400% 400%;
-        border-radius: inherit;
-        z-index: -1;
-        opacity: 0;
-        transition: opacity 0.4s ease;
-        animation: gradient-x 3s ease infinite;
-      }
-      .btn-glow-warm:hover::before {
-        opacity: 1;
-      }
-      .btn-glow-warm:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 30px rgba(244, 63, 94, 0.4);
       }
 
-      /* --- CURSOR BLINK --- */
+      /* --- CURSOR (static, no blink) --- */
       .cursor-blink::after {
         content: "|";
-        animation: blink 1s step-end infinite;
         color: #6366f1;
       }
-      @keyframes blink {
-        0%,
-        100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-      }
 
-      /* --- NAV LINKS --- */
+      /* --- NAV LINKS (static underline, no animated width) --- */
       .nav-link {
         position: relative;
       }
@@ -610,64 +316,14 @@
         position: absolute;
         bottom: -4px;
         left: 0;
-        width: 0;
+        width: 100%;
         height: 2px;
         background: linear-gradient(to right, #6366f1, #a855f7);
-        transition: width 0.3s ease;
         border-radius: 2px;
+        opacity: 0;
       }
       .nav-link:hover::after {
-        width: 100%;
-      }
-
-      /* --- BLOB ANIMATIONS --- */
-      .blob-1 {
-        animation: blob1 12s ease-in-out infinite;
-      }
-      .blob-2 {
-        animation: blob2 15s ease-in-out infinite;
-      }
-      .blob-3 {
-        animation: blob3 18s ease-in-out infinite;
-      }
-      .blob-4 {
-        animation: blob2 20s ease-in-out infinite;
-      }
-      @keyframes blob1 {
-        0%,
-        100% {
-          transform: translate(0, 0) scale(1);
-        }
-        33% {
-          transform: translate(50px, -30px) scale(1.1);
-        }
-        66% {
-          transform: translate(-20px, 20px) scale(0.95);
-        }
-      }
-      @keyframes blob2 {
-        0%,
-        100% {
-          transform: translate(0, 0) scale(1);
-        }
-        33% {
-          transform: translate(-30px, 40px) scale(1.05);
-        }
-        66% {
-          transform: translate(40px, -20px) scale(0.9);
-        }
-      }
-      @keyframes blob3 {
-        0%,
-        100% {
-          transform: translate(0, 0) scale(1);
-        }
-        33% {
-          transform: translate(30px, 30px) scale(1.1);
-        }
-        66% {
-          transform: translate(-40px, -10px) scale(0.95);
-        }
+        opacity: 1;
       }
 
       /* --- THEME TRANSITION WAVE --- */
@@ -683,15 +339,9 @@
         background: linear-gradient(to bottom, rgba(25, 12, 12, 0.5), #050505);
       }
 
-      /* --- IMAGE REVEAL --- */
+      /* --- IMAGE (no zoom-on-hover animation) --- */
       .img-reveal {
         overflow: hidden;
-      }
-      .img-reveal img {
-        transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .img-reveal:hover img {
-        transform: scale(1.08);
       }
       .project-label {
         position: absolute;
@@ -713,13 +363,12 @@
         backdrop-filter: blur(10px);
       }
 
-      /* --- MOBILE MENU --- */
+      /* --- MOBILE MENU (instant show/hide, no slide animation) --- */
       .mobile-menu {
-        transform: translateX(100%);
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: none;
       }
       .mobile-menu.open {
-        transform: translateX(0);
+        display: flex;
       }
 
       /* --- SECTION BG PATTERNS --- */
@@ -737,58 +386,65 @@
         );
         background-size: 30px 30px;
       }
+
+      /* Disable all remaining CSS transitions/animations site-wide as a safety net */
+      * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
     </style>
   </head>
   <body class="antialiased selection:bg-primary selection:text-white">
-    <!-- Animated background blobs -->
+    <!-- Static background blobs -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
       <div
-        class="blob blob-1 bg-indigo-600 w-[500px] h-[500px] rounded-full top-[-10%] left-[-5%]"
+        class="blob bg-indigo-600 w-[500px] h-[500px] rounded-full top-[-10%] left-[-5%]"
       ></div>
       <div
-        class="blob blob-2 bg-purple-600 w-[400px] h-[400px] rounded-full top-[30%] right-[-8%]"
+        class="blob bg-purple-600 w-[400px] h-[400px] rounded-full top-[30%] right-[-8%]"
       ></div>
       <div
-        class="blob blob-3 bg-rose-600 w-[350px] h-[350px] rounded-full bottom-[20%] left-[20%]"
+        class="blob bg-rose-600 w-[350px] h-[350px] rounded-full bottom-[20%] left-[20%]"
       ></div>
       <div
-        class="blob blob-4 bg-amber-600 w-[300px] h-[300px] rounded-full bottom-[-5%] right-[25%]"
+        class="blob bg-amber-600 w-[300px] h-[300px] rounded-full bottom-[-5%] right-[25%]"
       ></div>
     </div>
 
     <!-- Mobile Menu Overlay -->
     <div
       id="mobileMenu"
-      class="mobile-menu fixed inset-0 z-[60] bg-black/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8"
+      class="mobile-menu fixed inset-0 z-[60] bg-black/95 backdrop-blur-xl flex-col items-center justify-center gap-8"
     >
       <button
         onclick="toggleMobileMenu()"
-        class="absolute top-6 right-6 text-3xl text-gray-400 hover:text-white transition"
+        class="absolute top-6 right-6 text-3xl text-gray-400 hover:text-white"
       >
         &times;
       </button>
       <a
         href="#skills"
         onclick="toggleMobileMenu()"
-        class="text-2xl font-semibold text-gray-300 hover:text-white transition"
+        class="text-2xl font-semibold text-gray-300 hover:text-white"
         >Skills</a
       >
       <a
         href="#projects"
         onclick="toggleMobileMenu()"
-        class="text-2xl font-semibold text-gray-300 hover:text-white transition"
+        class="text-2xl font-semibold text-gray-300 hover:text-white"
         >Engineering</a
       >
       <a
         href="#packaging"
         onclick="toggleMobileMenu()"
-        class="text-2xl font-semibold text-gray-300 hover:text-white transition"
+        class="text-2xl font-semibold text-gray-300 hover:text-white"
         >Packaging</a
       >
       <a
         href="#creatives"
         onclick="toggleMobileMenu()"
-        class="text-2xl font-semibold text-gray-300 hover:text-white transition"
+        class="text-2xl font-semibold text-gray-300 hover:text-white"
         >Design Lab</a
       >
       <a
@@ -801,30 +457,30 @@
 
     <nav class="fixed w-full z-50 glass-nav" id="navbar">
       <div
-        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center transition-all duration-300"
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
       >
         <a href="#" class="text-2xl font-bold tracking-tighter group">
           <span class="text-white">R</span
           ><span class="text-gray-500">aman</span
           ><span
-            class="text-primary group-hover:text-accent transition-colors duration-300"
+            class="text-primary group-hover:text-accent"
             >.dev</span
           >
         </a>
         <div
           class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400"
         >
-          <a href="#skills" class="nav-link hover:text-white transition"
+          <a href="#skills" class="nav-link hover:text-white"
             >Skills</a
           >
-          <a href="#projects" class="nav-link hover:text-white transition"
+          <a href="#projects" class="nav-link hover:text-white"
             >Engineering</a
           >
           <span class="text-gray-700">|</span>
-          <a href="#packaging" class="nav-link hover:text-white transition"
+          <a href="#packaging" class="nav-link hover:text-white"
             >Packaging</a
           >
-          <a href="#creatives" class="nav-link hover:text-white transition"
+          <a href="#creatives" class="nav-link hover:text-white"
             >Design Lab</a
           >
           <div
@@ -833,13 +489,13 @@
             <a
               href="https://github.com/raman234aggarwal"
               target="_blank"
-              class="hover:text-white transition text-lg"
+              class="hover:text-white text-lg"
               ><i class="fab fa-github"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/ramanaggarwal-/"
               target="_blank"
-              class="hover:text-white transition text-lg"
+              class="hover:text-white text-lg"
               ><i class="fab fa-linkedin"></i
             ></a>
             <a
@@ -853,7 +509,7 @@
         <!-- Mobile Hamburger -->
         <button
           onclick="toggleMobileMenu()"
-          class="md:hidden text-2xl text-gray-400 hover:text-white transition"
+          class="md:hidden text-2xl text-gray-400 hover:text-white"
         >
           <i class="fas fa-bars"></i>
         </button>
@@ -865,7 +521,7 @@
       class="min-h-screen flex items-center justify-center px-6 pt-20 relative"
     >
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        <div class="animate-fade-in-up">
+        <div>
           <div class="section-label section-label-tech mb-4">
             <i class="fas fa-terminal text-[8px]"></i> SOFTWARE ENGINEER
           </div>
@@ -891,21 +547,21 @@
             <a
               href="https://github.com/raman234aggarwal"
               target="_blank"
-              class="px-8 py-4 bg-card border border-gray-700 rounded-xl font-bold flex items-center gap-2 hover:bg-gray-800 hover:border-gray-500 hover:-translate-y-1 transition-all duration-300"
+              class="px-8 py-4 bg-card border border-gray-700 rounded-xl font-bold flex items-center gap-2 hover:bg-gray-800 hover:border-gray-500"
             >
               <i class="fab fa-github"></i> GitHub
             </a>
           </div>
         </div>
-        <div class="flex justify-center animate-slide-in-right">
+        <div class="flex justify-center">
           <div
-            class="relative w-72 h-72 md:w-[26rem] md:h-[26rem] animate-float"
+            class="relative w-72 h-72 md:w-[26rem] md:h-[26rem]"
           >
             <div
               class="absolute inset-0 bg-gradient-to-tr from-indigo-600/15 to-cyan-500/15 rounded-3xl rotate-6 blur-2xl"
             ></div>
             <div
-              class="absolute inset-0 bg-[#0d0d15] border border-indigo-500/10 rounded-3xl flex items-center justify-center overflow-hidden shadow-2xl hover:border-indigo-500/25 transition-all duration-500"
+              class="absolute inset-0 bg-[#0d0d15] border border-indigo-500/10 rounded-3xl flex items-center justify-center overflow-hidden shadow-2xl hover:border-indigo-500/25"
             >
               <div
                 class="text-left font-mono text-xs md:text-sm text-gray-500 bg-black/60 p-6 rounded-xl border border-gray-800/50"
@@ -939,7 +595,7 @@
     <!-- ===== TECH STACK (TECH THEME) ===== -->
     <section id="skills" class="py-20 px-6 section-tech bg-grid-tech relative">
       <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-14 reveal">
+        <div class="text-center mb-14">
           <div class="section-label section-label-tech mx-auto">
             <i class="fas fa-microchip text-[8px]"></i> TECHNICAL
           </div>
@@ -948,7 +604,7 @@
           </h2>
         </div>
         <div
-          class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 stagger-children"
+          class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6"
         >
           <div class="glass-card-tech p-6 rounded-2xl text-center">
             <i class="fab fa-html5 text-3xl mb-3 text-orange-500"></i>
@@ -1016,7 +672,7 @@
       class="py-24 px-6 section-tech bg-grid-tech relative"
     >
       <div class="max-w-6xl mx-auto">
-        <div class="reveal mb-14">
+        <div class="mb-14">
           <div class="section-label section-label-tech">
             <i class="fas fa-code text-[8px]"></i> DEVELOPMENT
           </div>
@@ -1030,17 +686,17 @@
           <a
             href="https://interview-agent-ai.vercel.app/"
             target="_blank"
-            class="glass-card-tech rounded-3xl overflow-hidden flex flex-col reveal-left hover:no-underline group"
+            class="glass-card-tech rounded-3xl overflow-hidden flex flex-col hover:no-underline group"
             data-preview-video
           >
             <div class="relative aspect-video overflow-hidden">
               <img
                 src="ai interview agent.png"
                 alt="AI Interview Agent"
-                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0"
               />
               <video
-                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100"
                 muted
                 loop
                 playsinline
@@ -1096,17 +752,17 @@
           <a
             href="https://examnotesaiclinet.onrender.com/"
             target="_blank"
-            class="glass-card-tech rounded-3xl overflow-hidden flex flex-col reveal-right hover:no-underline group"
+            class="glass-card-tech rounded-3xl overflow-hidden flex flex-col hover:no-underline group"
             data-preview-video
           >
             <div class="relative aspect-video overflow-hidden">
               <img
                 src="ai exam notes generator.png"
                 alt="AI Exam Notes Generator"
-                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                class="absolute inset-0 w-full h-full object-cover group-hover:opacity-0"
               />
               <video
-                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100"
                 muted
                 loop
                 playsinline
@@ -1165,7 +821,7 @@
           <a
             href="https://github.com/raman234aggarwal"
             target="_blank"
-            class="glass-card-tech rounded-3xl overflow-hidden grid lg:grid-cols-[1.25fr_1fr] reveal hover:no-underline group"
+            class="glass-card-tech rounded-3xl overflow-hidden grid lg:grid-cols-[1.25fr_1fr] hover:no-underline group"
             data-preview-video
           >
             <div
@@ -1177,12 +833,12 @@
                 <img
                   src="ai website builders.png"
                   alt="AI Website Builder"
-                  class="w-full h-full object-cover object-center transition-opacity duration-500 opacity-100 lg:group-hover:opacity-0"
+                  class="w-full h-full object-cover object-center opacity-100 group-hover:opacity-0"
                 />
               </picture>
               <video
-                class="hidden lg:block absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                muteda
+                class="block absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100"
+                muted
                 loop
                 playsinline
                 preload="none"
@@ -1224,7 +880,7 @@
                 >
               </div>
               <h3
-                class="text-3xl font-bold mb-3 text-white group-hover:text-primary transition-colors"
+                class="text-3xl font-bold mb-3 text-white group-hover:text-primary"
               >
                 AI Website Builder
               </h3>
@@ -1269,7 +925,7 @@
       style="background-color: rgba(15, 8, 8, 0.4)"
     >
       <div class="max-w-7xl mx-auto">
-        <div class="reveal">
+        <div>
           <div class="section-label section-label-design">
             <i class="fas fa-palette text-[8px]"></i> CREATIVE / DESIGN
           </div>
@@ -1278,7 +934,7 @@
             <span class="gradient-text-design">Packaging Design </span>
           </h2>
         </div>
-        <p class="text-gray-500 max-w-3xl leading-relaxed mb-12 reveal">
+        <p class="text-gray-500 max-w-3xl leading-relaxed mb-12">
           This is the packaging design of
           <strong>Makhana (Fox Nuts)</strong> made by me using
           <strong>Adobe Illustrator</strong> for a US brand. While the design is
@@ -1287,20 +943,15 @@
         </p>
         <div class="grid lg:grid-cols-2 gap-8 mb-12">
           <div class="flex flex-col gap-8">
-            <div
-              class="glass-card-design rounded-2xl aspect-16-9 img-reveal reveal-left"
-            >
+            <div class="glass-card-design rounded-2xl aspect-16-9 img-reveal">
               <img src="1.png" class="w-full h-full object-cover" />
             </div>
-            <div
-              class="glass-card-design rounded-2xl aspect-16-9 img-reveal reveal-left"
-              style="transition-delay: 0.15s"
-            >
+            <div class="glass-card-design rounded-2xl aspect-16-9 img-reveal">
               <img src="2.png" class="w-full h-full object-cover" />
             </div>
           </div>
           <div
-            class="glass-card-design rounded-2xl relative overflow-hidden h-full min-h-[400px] reveal-right"
+            class="glass-card-design rounded-2xl relative overflow-hidden h-full min-h-[400px]"
           >
             <video
               autoplay
@@ -1317,7 +968,7 @@
           </div>
         </div>
         <div
-          class="glass-card-design rounded-3xl p-8 grid md:grid-cols-[1fr_2fr] gap-8 items-center reveal-scale"
+          class="glass-card-design rounded-3xl p-8 grid md:grid-cols-[1fr_2fr] gap-8 items-center"
         >
           <div>
             <h3 class="text-2xl font-bold mb-4">Technical Engineering</h3>
@@ -1365,12 +1016,12 @@
         </div>
 
         <!-- Visual Showcase -->
-        <div class="grid grid-cols-3 gap-5 mt-10 max-w-4xl mx-auto reveal">
+        <div class="grid grid-cols-3 gap-5 mt-10 max-w-4xl mx-auto">
           <div class="glass-card-design rounded-xl overflow-hidden relative">
             <img
               src="visual1.jpg"
               alt="Visual 1"
-              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              class="w-full h-full object-cover"
             />
             <div
               class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3"
@@ -1384,7 +1035,7 @@
             <img
               src="visual2.jpg"
               alt="Visual 2"
-              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              class="w-full h-full object-cover"
             />
             <div
               class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3"
@@ -1398,7 +1049,7 @@
             <img
               src="visual3.jpg"
               alt="Visual 3"
-              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              class="w-full h-full object-cover"
             />
             <div
               class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3"
@@ -1419,17 +1070,17 @@
       style="background-color: rgba(15, 8, 8, 0.3)"
     >
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div class="grid grid-cols-2 gap-4 reveal-left">
+        <div class="grid grid-cols-2 gap-4">
           <img
             src="4.jpg"
-            class="rounded-2xl border border-rose-500/10 hover:border-rose-500/30 transition-all duration-500 hover:-translate-y-1"
+            class="rounded-2xl border border-rose-500/10 hover:border-rose-500/30"
           />
           <img
             src="5.jpg"
-            class="rounded-2xl border border-rose-500/10 hover:border-rose-500/30 transition-all duration-500 hover:-translate-y-1"
+            class="rounded-2xl border border-rose-500/10 hover:border-rose-500/30"
           />
         </div>
-        <div class="reveal-right">
+        <div>
           <div class="section-label section-label-design">
             <i class="fas fa-heart text-[8px]"></i> SOCIAL DESIGN
           </div>
@@ -1452,7 +1103,7 @@
       style="background-color: rgba(15, 8, 8, 0.2)"
     >
       <div class="max-w-7xl mx-auto">
-        <div class="reveal">
+        <div>
           <div class="section-label section-label-design">
             <i class="fas fa-pen-ruler text-[8px]"></i> VISUAL DESIGN
           </div>
@@ -1460,115 +1111,79 @@
             Creative <span class="gradient-text-design">Studio</span>
           </h2>
         </div>
-        <h3 class="text-xl font-bold mb-8 flex items-center gap-3 reveal">
+        <h3 class="text-xl font-bold mb-8 flex items-center gap-3">
           <i class="fab fa-youtube text-red-600"></i> YouTube Thumbnails
         </h3>
         <div
-          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-20 stagger-children"
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-20"
         >
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="10.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="10.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="11.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="11.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="12.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="12.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="13.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="13.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="14.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="14.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="15.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="15.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="16.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="16.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="17.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="17.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="18.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="18.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="19.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="19.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="20.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="20.jpg" class="w-full h-full object-cover" />
           </div>
           <div
             class="glass-card-design aspect-video rounded-xl overflow-hidden"
           >
-            <img
-              src="21.jpg"
-              class="w-full h-full object-cover hover:scale-110 transition duration-500"
-            />
+            <img src="21.jpg" class="w-full h-full object-cover" />
           </div>
         </div>
 
-        <h3 class="text-xl font-bold mb-8 flex items-center gap-3 reveal">
+        <h3 class="text-xl font-bold mb-8 flex items-center gap-3">
           <i class="fas fa-pen-nib text-indigo-500"></i> Logos Design
         </h3>
         <div
-          class="grid grid-cols-3 md:grid-cols-6 gap-8 stagger-children max-w-6xl mx-auto"
+          class="grid grid-cols-3 md:grid-cols-6 gap-8 max-w-6xl mx-auto"
         >
           <div
             class="glass-card-design aspect-square rounded-full p-2 flex items-center justify-center overflow-hidden"
@@ -1626,19 +1241,17 @@
           </div>
         </div>
 
-        <h3 class="text-xl font-bold mb-8 mt-20 flex items-center gap-3 reveal">
+        <h3 class="text-xl font-bold mb-8 mt-20 flex items-center gap-3">
           <i class="fab fa-figma text-pink-400"></i> Figma Designs
         </h3>
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-6 stagger-children max-w-5xl mx-auto"
-        >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           <div
             class="glass-card-design rounded-2xl overflow-hidden img-reveal relative bg-gradient-to-br from-white/10 via-amber-50/5 to-white/10"
           >
             <img
               src="figma1.png"
               alt="Figma Design 1"
-              class="w-full h-full object-contain hover:scale-105 transition duration-500"
+              class="w-full h-full object-contain"
             />
             <div
               class="absolute inset-0 bg-gradient-to-t from-amber-50/20 via-transparent to-white/10 rounded-2xl pointer-events-none"
@@ -1650,7 +1263,7 @@
             <img
               src="figma2.png"
               alt="Figma Design 2"
-              class="w-full h-full object-contain hover:scale-105 transition duration-500"
+              class="w-full h-full object-contain"
             />
             <div
               class="absolute inset-0 bg-gradient-to-t from-amber-50/20 via-transparent to-white/10 rounded-2xl pointer-events-none"
@@ -1662,7 +1275,7 @@
             <img
               src="figma3.png"
               alt="Figma Design 3"
-              class="w-full h-full object-contain hover:scale-105 transition duration-500"
+              class="w-full h-full object-contain"
             />
             <div
               class="absolute inset-0 bg-gradient-to-t from-amber-50/20 via-transparent to-white/10 rounded-2xl pointer-events-none"
@@ -1674,7 +1287,7 @@
             <img
               src="figma4.png"
               alt="Figma Design 4"
-              class="w-full h-full object-contain hover:scale-105 transition duration-500"
+              class="w-full h-full object-contain"
             />
             <div
               class="absolute inset-0 bg-gradient-to-t from-amber-50/20 via-transparent to-white/10 rounded-2xl pointer-events-none"
@@ -1690,26 +1303,26 @@
     <!-- ===== FOOTER ===== -->
     <footer id="contact" class="py-24 text-center relative">
       <div class="max-w-3xl mx-auto px-6">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
           Let's build the <span class="gradient-text">future.</span>
         </h2>
-        <p class="text-gray-500 mb-10 reveal">
+        <p class="text-gray-500 mb-10">
           Whether it's code or design — let's create something remarkable
           together.
         </p>
         <div
-          class="flex flex-col sm:flex-row items-center justify-center gap-4 reveal"
+          class="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
             href="https://mail.google.com/mail/?view=cm&to=raman234aggarwal@gmail.com"
             target="_blank"
-            class="px-10 py-4 bg-white text-black rounded-xl font-bold hover:bg-gray-100 hover:shadow-xl hover:shadow-white/10 hover:-translate-y-1 transition-all duration-300"
+            class="px-10 py-4 bg-white text-black rounded-xl font-bold hover:bg-gray-100"
             >Email Me <i class="fas fa-arrow-right ml-2 text-sm"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/ramanaggarwal-/"
             target="_blank"
-            class="px-10 py-4 bg-blue-600/10 text-blue-400 border border-blue-500/20 rounded-xl font-bold hover:bg-blue-600/20 hover:-translate-y-1 transition-all duration-300"
+            class="px-10 py-4 bg-blue-600/10 text-blue-400 border border-blue-500/20 rounded-xl font-bold hover:bg-blue-600/20"
             ><i class="fab fa-linkedin mr-2"></i>LinkedIn</a
           >
         </div>
@@ -1718,19 +1331,19 @@
           <a
             href="https://github.com/raman234aggarwal"
             target="_blank"
-            class="hover:text-indigo-400 hover:scale-125 transition-all duration-300"
+            class="hover:text-indigo-400"
             ><i class="fab fa-github"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/ramanaggarwal-/"
             target="_blank"
-            class="hover:text-blue-500 hover:scale-125 transition-all duration-300"
+            class="hover:text-blue-500"
             ><i class="fab fa-linkedin"></i
           ></a>
           <a
             href="https://mail.google.com/mail/?view=cm&to=raman234aggarwal@gmail.com"
             target="_blank"
-            class="hover:text-rose-400 hover:scale-125 transition-all duration-300"
+            class="hover:text-rose-400"
             ><i class="fas fa-envelope"></i
           ></a>
         </div>
@@ -1744,47 +1357,28 @@
       </div>
     </footer>
 
-    <!-- Scroll Reveal, Nav Shrink & Mobile Menu Script -->
+    <!-- Nav & Mobile Menu Script (scroll-reveal animation observer removed) -->
     <script>
-      // Navbar shrink on scroll
+      // Navbar (static state, no scroll-based scale/shrink change)
       const navbar = document.getElementById("navbar");
-      window.addEventListener("scroll", () => {
-        navbar.classList.toggle("scrolled", window.scrollY > 50);
-      });
 
       // Mobile menu toggle
       function toggleMobileMenu() {
         document.getElementById("mobileMenu").classList.toggle("open");
       }
 
-      // Scroll Reveal Observer
-      const revealElements = document.querySelectorAll(
-        ".reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-children",
-      );
-      const revealObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("active");
-            }
-          });
-        },
-        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
-      );
-      revealElements.forEach((el) => revealObserver.observe(el));
-
-      // Smooth scroll for nav links
+      // Smooth scroll disabled — instant jump to section
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
           const target = document.querySelector(this.getAttribute("href"));
           if (target) {
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            target.scrollIntoView({ block: "start" });
           }
         });
       });
 
-      // Project preview videos on hover
+      // Project preview videos on hover (no animated fade, just show/hide)
       document.querySelectorAll("[data-preview-video]").forEach((card) => {
         const video = card.querySelector("video");
         if (!video) return;
